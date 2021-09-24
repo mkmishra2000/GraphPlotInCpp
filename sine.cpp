@@ -8,37 +8,46 @@
 
 using namespace std;
 
-int main()
+void grapghPlot(vector<double> x_axis, vector<double> y_axis)
 {
+
     RGBABitmapImageReference *imageRef = CreateRGBABitmapImageReference();
-
-    vector<double> x_axis {-3,-2.5, -2,-1.5, -1,-0.5, 0, 0.5, 1, 1.5, 2,2.5, 3};
-    vector<double> y_axis;
-
-    cout<< "X and Y defination started"<<endl;
-
-    for(int i =0; i<x_axis.size(); i++){
-        y_axis.insert(y_axis.end(), sin(x_axis[i]) );
-    }
-
-   
-   
 
     DrawScatterPlot(imageRef, 600, 400, &x_axis, &y_axis);
 	
-    cout<< "PNG"<<endl; 
 
 	vector<double> *pngData = ConvertToPNG(imageRef->image);
 	
-    cout<< "Write into file"<<endl;
 
 	WriteToFile(pngData, "OutputImages/plot2.png");
 	
-    cout<< "Delete img"<<endl;
 
 	DeleteImage(imageRef->image);
 
-    cout<< "Check image"<<endl;
+}
+
+int main()
+{
+    
+    vector<double> x_axis;
+    vector<double> y_axis;
+
+    double p=0;
+
+    int i =0;
+    for(i =0; i<100 ; i++){
+        
+        p = -(2*m_pi)+ (i*0.10);
+        x_axis.insert(x_axis.end(), p);
+    }
+
+
+    for(int i =0; i<x_axis.size(); i++){
+        y_axis.insert(y_axis.end(), sin(x_axis[i]));
+    }
+
+    grapghPlot(x_axis, y_axis);
+    
 
     return 0;
 }
