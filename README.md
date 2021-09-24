@@ -12,4 +12,9 @@ Here, answer of this question has given in term of simple steps.
 3. Enjoy any function.
 
 ## Best examples given here
+ ### tangent
+ ![tanplot1](https://user-images.githubusercontent.com/47395502/134683797-25d29476-ea09-4460-87df-a88264df6ac2.png)
  
+ ### Gaussian 
+ ![Gaussian](https://user-images.githubusercontent.com/47395502/134683866-514bc8bd-ca28-4f21-8b52-e2a3af47de97.png)
+
