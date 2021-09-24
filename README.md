@@ -19,3 +19,6 @@ Here, answer of this question has given in term of simple steps.
  ### Gaussian 
  ![Gaussian](https://user-images.githubusercontent.com/47395502/134683866-514bc8bd-ca28-4f21-8b52-e2a3af47de97.png)
 
+### Two graphs simultaneously
+
+![mix](https://user-images.githubusercontent.com/47395502/134688308-2c256c14-3fc2-4a94-95a0-000d385f0c0a.png)
