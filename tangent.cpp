@@ -19,8 +19,8 @@ void grapghPlot(vector<double> x_axis, vector<double> y_axis)
 	series->linearInterpolation = false;
 	series->pointType = toVector(L"crosses");
     series->lineType = toVector(L"dashed");
-	series->lineThickness = 2;
-	series->color = CreateRGBColor(0.1, 0.5, 0.3);
+	series->lineThickness = 4;
+	series->color = CreateRGBColor(0.1, 0.7, 0.3);
 
 	ScatterPlotSettings *settings = GetDefaultScatterPlotSettings();
 	settings->width = 1200;
@@ -56,12 +56,12 @@ int main()
     double p=0;
 
     int i =0;
-    for(i =0; i<28; i++){
+    for(i =0; i<56; i++){
         
-        p = -(0.46*m_pi)+ (i*0.1);
+        p = -(0.46*m_pi)+ (i*0.05);
         x_axis.insert(x_axis.end(), p);
 
-        p = (0.54*m_pi) + (i*0.1);
+        p = (0.54*m_pi) + (i*0.05);
         x_axis2.insert(x_axis2.end(), p);
     }
 
